@@ -9,7 +9,7 @@
     <th:block th:each="user : ${users}">
         <a th:href="@{/users/{id}/edit(id=${user.getId()})}" th:text="${user.getName()}">user</a>
         <form th:method="DELETE" th:action="@{/users/{id}(id=${user.getId()})}">
-            <input type="submit" value="Delete">
+            <input type="submit" value="Delete!">
         </form>
         <br>
     </th:block>
